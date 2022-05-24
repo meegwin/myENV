@@ -1,0 +1,15 @@
+.Navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    color: #fff;
+}
+
+.Navbar__Location {
+    display: flex;
+    flex-direction: column;
+    span:first-child {
+        text-align: center;
+    }
+}

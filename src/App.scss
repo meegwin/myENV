@@ -1,0 +1,89 @@
+.App {
+  background: linear-gradient(
+    180deg,
+    rgba(50, 94, 189, 0.914),
+    rgba(25, 107, 138, 0.779) 60%,
+    rgba(0, 172, 255, 0.32)
+  );
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin basic-flex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Home__Screen {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  &__Bottom {
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+.Chart__Wave__Container {
+  height: 100%;
+  background-color: #fff;
+  flex: 1 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.Weather {
+  &__Info {
+    @include basic-flex;
+    padding: 2rem 0 2rem 0;
+  }
+  &__Info__Detail {
+    @include basic-flex;
+  }
+  &__Info__Detail {
+    &__Column {
+      @include basic-flex;
+      width: 25%;
+      height: 120px;
+      flex-direction: column;
+      box-sizing: border-box;
+      border-right: 2px solid #fff;
+      div:first-child {
+        font-weight: 700;
+      }
+    }
+    &__Column:last-child {
+      border: none;
+      color: #000;
+    }
+  }
+}
+
+.Weather__Info__PSI {
+  background: #69c75b;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 6px;
+}
+.Weather__Info__Dengue {
+  background-color: #94d6f7;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  height: 40px;
+  margin: 17px 0 10px;
+  width: 40px;
+}
