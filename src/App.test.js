@@ -1,8 +1,15 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("Navbar", () => {
+  it("renders PSI", () => {
+    render(<App />);
+    const linkElement = screen.getByText(/PSI/i);
+    expect(linkElement).toBeInTheDocument();
+  });
+
+  it("should render 1 chart wave day", () => {
+    const { container } = render(<App />);
+    expect(container.getElementsByClassName("Chart__Wave__Day").length).toBe(1);
+  });
 });

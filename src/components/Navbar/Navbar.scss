@@ -1,15 +1,24 @@
 .Navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  color: #fff;
 }
 
 .Navbar__Location {
-    display: flex;
-    flex-direction: column;
-    span:first-child {
-        text-align: center;
-    }
+  display: flex;
+  flex-direction: column;
+  span:first-child {
+    text-align: center;
+  }
+}
+select {
+  background: transparent;
+  border: transparent;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 8px;
+  max-width: 150px;
+  outline: none;
 }
