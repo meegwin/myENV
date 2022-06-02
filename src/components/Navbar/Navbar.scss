@@ -1,4 +1,4 @@
-.Navbar {
+.navbar {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -6,14 +6,14 @@
   color: #fff;
 }
 
-.Navbar__Location {
+.navbar__location {
   display: flex;
   flex-direction: column;
   span:first-child {
     text-align: center;
   }
 }
-select {
+.navbar__location__select {
   background: transparent;
   border: transparent;
   color: #fff;

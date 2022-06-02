@@ -1,0 +1,44 @@
+.chart__wave__ {
+    &image--sun {
+      width: 20px;
+      height: 20px;
+    }
+    &container {
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      flex: 1 1;
+      overflow-x: auto;
+      overflow-y: hidden;
+      color: #000;
+    }
+    &p--moon {
+      position: absolute;
+      bottom: 230px;
+      left: 50%;
+      margin-left: -10px;
+    }
+    &kim {
+      background-color: rgba(0, 0, 0, 0.2);
+      bottom: 37px;
+      height: 200px;
+      left: 50%;
+      position: absolute;
+      -webkit-transform: translateX(-1px);
+      transform: translateX(-1px);
+      width: 1px;
+      z-index: 2;
+    }
+    &p--time {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      margin-left: -40px;
+    }
+    &p--day {
+      position: absolute;
+      left: 50%;
+      bottom: 300px;
+      margin-left: -20px;
+    }
+  }
